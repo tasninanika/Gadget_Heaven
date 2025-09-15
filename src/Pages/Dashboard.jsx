@@ -69,9 +69,9 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen p-4">
+    <div className="bg-gray-100 min-h-screen">
       {/* Header Section */}
-      <div className="bg-purple-600 text-white text-center py-6 rounded-lg shadow-md">
+      <div className="bg-purple-600 text-white text-center py-6 shadow-md">
         <Helmet>
           <title>Dashboard || Gadget Heaven</title>
         </Helmet>
@@ -122,7 +122,7 @@ const Dashboard = () => {
                 <span className="font-bold">Total Cost: ${totalPrice}</span>
                 <button
                   onClick={sortCartByPrice}
-                  className="px-4 py-2 border rounded-lg hover:bg-gray-200"
+                  className="px-4 py-2 border text-purple-400 rounded-full hover:bg-gray-200"
                 >
                   Sort by Price
                 </button>
