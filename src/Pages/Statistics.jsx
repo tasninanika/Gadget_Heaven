@@ -44,8 +44,17 @@ const Statistics = () => {
             {/* horizontal grid */}
             <CartesianGrid stroke="#e5e7eb" vertical={false} />
 
-            <XAxis dataKey="product_title" tick={{ fontSize: 12 }} />
-            <YAxis />
+            <XAxis
+              dataKey="product_title"
+              axisLine={false}
+              tickLine={false}
+              tick={{ fill: "#1f2937", fontSize: 12 }}
+            />
+            <YAxis
+              axisLine={false}
+              tickLine={false}
+              tick={{ fill: "#1f2937", fontSize: 12 }}
+            />
             <Tooltip />
             <Legend />
 
