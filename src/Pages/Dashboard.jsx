@@ -62,11 +62,10 @@ const Dashboard = () => {
     localStorage.setItem("ToCart", JSON.stringify([]));
   };
 
-
   // Close modal & navigate to home
   const handleClose = () => {
     setShowModal(false);
-    navigate("/"); 
+    navigate("/");
   };
 
   return (
@@ -79,7 +78,8 @@ const Dashboard = () => {
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <p className="mt-2">
           Explore the latest gadgets that will take your experience to the next
-          level.
+          level. From smart devices to <br /> the coolest accessories, we have
+          it all!
         </p>
 
         {/* Toggle Buttons */}
@@ -88,8 +88,8 @@ const Dashboard = () => {
             onClick={() => setIsCart(true)}
             className={`px-6 py-2 rounded-full transition ${
               isCart
-                ? "bg-white text-purple-600 font-bold shadow-md"
-                : "bg-gray-300"
+                ? "px-12 bg-white text-purple-600 font-bold"
+                : "px-12 border border-white text-white"
             }`}
           >
             Cart
@@ -98,8 +98,8 @@ const Dashboard = () => {
             onClick={() => setIsCart(false)}
             className={`px-6 py-2 rounded-full transition ${
               !isCart
-                ? "bg-white text-purple-600 font-bold shadow-md"
-                : "bg-gray-300"
+                ? "px-10 bg-white text-purple-600 font-bold"
+                : "px-10 border border-white text-white"
             }`}
           >
             Wishlist
