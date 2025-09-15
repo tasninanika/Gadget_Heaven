@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <div className="flex justify-center items-center text-center mt-18">
-        <h2 className="font-bold text-2xl text-black">Gadget Heaven</h2>
+        <h2 className="font-bold text-3xl text-black">Gadget Heaven</h2>
       </div>
       <div className="flex justify-center items-center text-center ">
         <p className="mt-2">
