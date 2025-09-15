@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Card = ({ gadget }) => {
   const { product_id, price, product_image, product_title } = gadget || {}; // Include product_id
@@ -30,6 +31,16 @@ const Card = ({ gadget }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  gadget: PropTypes.shape({
+    product_id: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+      .isRequired,
+    product_title: PropTypes.string.isRequired,
+    product_image: PropTypes.string.isRequired,
+    price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  }).isRequired,
 };
 
 export default Card;
