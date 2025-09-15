@@ -1,0 +1,46 @@
+[
+  {
+    "category": "Laptops",
+    "products": [
+      { "product_id": "L001", "product_title": "Dell XPS 13" },
+      { "product_id": "L002", "product_title": "MacBook Air M2" },
+      { "product_id": "L003", "product_title": "HP Spectre x360" }
+    ]
+  },
+  {
+    "category": "Phones",
+    "products": [
+      { "product_id": "P001", "product_title": "iPhone 15 Pro Max" },
+      { "product_id": "P002", "product_title": "Samsung Galaxy S23 Ultra" },
+      { "product_id": "P003", "product_title": "Google Pixel 8 Pro" }
+    ]
+  },
+  {
+    "category": "Accessories",
+    "products": [
+      { "product_id": "A001", "product_title": "Apple AirPods Pro 2" },
+      { "product_id": "A002", "product_title": "Samsung Galaxy Buds 2 Pro" }
+    ]
+  },
+  {
+    "category": "Smart Watches",
+    "products": [
+      { "product_id": "SW001", "product_title": "Apple Watch Series 9" },
+      { "product_id": "SW002", "product_title": "Samsung Galaxy Watch 6" }
+    ]
+  },
+  {
+    "category": "MacBooks",
+    "products": [
+      { "product_id": "MB001", "product_title": "MacBook Pro 16 M3" },
+      { "product_id": "MB002", "product_title": "MacBook Air M1" }
+    ]
+  },
+  {
+    "category": "iPhones",
+    "products": [
+      { "product_id": "IP001", "product_title": "iPhone 14 Pro" },
+      { "product_id": "IP002", "product_title": "iPhone SE 3rd Gen" }
+    ]
+  }
+]

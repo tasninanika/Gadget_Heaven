@@ -1,0 +1,275 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/F4ghLSP1/iphone-15.webp",
+    "category": "Phones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/j90hc1Zm/THUMB-005-galaxy-s23ultra-device-spen-back-green.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "Powerful performance and an advanced camera system.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "200MP main camera",
+      "S Pen support",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Google Pixel 7 Pro",
+    "product_image": "https://i.ibb.co.com/chC2DNnT/Pixel-7-Pro-Snow-custom-mac-bd.webp",
+    "category": "Phones",
+    "price": 899,
+    "description": "Google’s best AI-powered smartphone experience.",
+    "specification": [
+      "6.7-inch LTPO OLED display",
+      "Google Tensor G2 chip",
+      "50MP main camera",
+      "120Hz refresh rate",
+      "5000mAh battery"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P004",
+    "product_title": "OnePlus 11 5G",
+    "product_image": "https://i.ibb.co.com/5xkw1Ckb/oneplus-11-2.jpg",
+    "category": "Phones",
+    "price": 799,
+    "description": "Flagship power with Hasselblad-tuned cameras.",
+    "specification": [
+      "6.7-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "Hasselblad Camera System",
+      "80W fast charging",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Sony Xperia 1 V",
+    "product_image": "https://i.ibb.co.com/gM7CQxGw/xperia1v.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "Cinematic display and pro-grade camera features.",
+    "specification": [
+      "6.5-inch 4K OLED display",
+      "Snapdragon 8 Gen 2",
+      "Quad-camera system",
+      "120Hz refresh rate",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Xiaomi 13 Pro",
+    "product_image": "https://i.ibb.co.com/k2FF9qmS/Xiaomi-13-Pro.jpg",
+    "category": "Phones",
+    "price": 1099,
+    "description": "Leica-powered cameras with ultra-fast charging.",
+    "specification": [
+      "6.73-inch LTPO OLED display",
+      "Snapdragon 8 Gen 2",
+      "50MP Leica triple-camera",
+      "120W fast charging",
+      "4820mAh battery"
+    ],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_id": "L001",
+    "product_title": "MacBook Pro 16 M2 Max",
+    "product_image": "https://i.ibb.co.com/G184DKy/macbookpro16.jpg",
+    "category": "Laptops",
+    "price": 2499,
+    "description": "The ultimate laptop for creative professionals.",
+    "specification": [
+      "16.2-inch Liquid Retina XDR display",
+      "M2 Max chip",
+      "32GB RAM, 1TB SSD",
+      "100W fast charging",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "L002",
+    "product_title": "Dell XPS 15",
+    "product_image": "https://i.ibb.co.com/nMmNZZ6F/Dell-XPS-15-Front-and-Top-View.jpg",
+    "category": "Laptops",
+    "price": 1799,
+    "description": "Powerful performance in a sleek design.",
+    "specification": [
+      "15.6-inch 4K OLED display",
+      "Intel Core i9 13th Gen",
+      "32GB RAM, 1TB SSD",
+      "NVIDIA RTX 4060",
+      "Windows 11 Pro"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "S001",
+    "product_title": "Apple Watch Ultra",
+    "product_image": "https://i.ibb.co.com/LzJ8BXxS/Apple-Watch-Ultra.jpg",
+    "category": "Smart Watches",
+    "price": 799,
+    "description": "The toughest and most powerful Apple Watch.",
+    "specification": [
+      "49mm Titanium Case",
+      "LTPO OLED Always-On Display",
+      "Dual-frequency GPS",
+      "Up to 36 hours battery life",
+      "Water-resistant up to 100m"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "S002",
+    "product_title": "Samsung Galaxy Watch 5 Pro",
+    "product_image": "https://i.ibb.co.com/xKC6thPR/THUMB-003.jpg",
+    "category": "Smart Watches",
+    "price": 499,
+    "description": "Advanced health tracking with premium design.",
+    "specification": [
+      "1.4-inch Super AMOLED display",
+      "Titanium Frame",
+      "Body Composition Analysis",
+      "GPS and LTE support",
+      "Up to 80 hours battery life"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "A001",
+    "product_title": "Apple AirPods Pro (2nd Gen)",
+    "product_image": "https://i.ibb.co.com/t7wCvJh/Apple-Air-Pods-Pro-2nd-Gen.png",
+    "category": "Accessories",
+    "price": 249,
+    "description": "Active Noise Cancellation and immersive sound experience.",
+    "specification": [
+      "H2 chip",
+      "Adaptive Transparency",
+      "MagSafe charging case",
+      "Spatial Audio with dynamic head tracking",
+      "Up to 6 hours of listening time"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "A002",
+    "product_title": "Samsung Galaxy Buds 2 Pro",
+    "product_image": "https://i.ibb.co.com/fzhnG6LC/Samsung-Galaxy-Buds-2-Pro.jpg",
+    "category": "Accessories",
+    "price": 229,
+    "description": "Hi-Fi sound with active noise canceling.",
+    "specification": [
+      "24-bit Hi-Fi Audio",
+      "Intelligent ANC",
+      "360 Audio",
+      "Bluetooth 5.3",
+      "Up to 5 hours of playtime"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "M001",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://i.ibb.co.com/xq8zghd2/Mac-Book-Air-M2.jpg",
+    "category": "MacBooks",
+    "price": 1199,
+    "description": "Supercharged performance in an ultra-thin design.",
+    "specification": [
+      "13.6-inch Liquid Retina display",
+      "M2 chip",
+      "8GB RAM, 256GB SSD",
+      "18-hour battery life",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "M002",
+    "product_title": "MacBook Pro 14 M2 Pro",
+    "product_image": "https://i.ibb.co.com/TDZvf2sj/Mac-Book-Pro-14-M2-Pro.jpg",
+    "category": "MacBooks",
+    "price": 1999,
+    "description": "Powerful performance for professionals.",
+    "specification": [
+      "14.2-inch Liquid Retina XDR display",
+      "M2 Pro chip",
+      "16GB RAM, 512GB SSD",
+      "MagSafe 3 charging",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "I001",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://i.ibb.co.com/HTKRJrRv/i-Phone-14-Pro.jpg",
+    "category": "iPhones",
+    "price": 999,
+    "description": "A transformative iPhone experience with Dynamic Island.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A16 Bionic chip",
+      "48MP main camera",
+      "Always-On display",
+      "iOS 16"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "I002",
+    "product_title": "iPhone 13 Mini",
+    "product_image": "https://i.ibb.co.com/Y4z58ns2/i-Phone-13-Mini.jpg",
+    "category": "iPhones",
+    "price": 699,
+    "description": "Compact and powerful with advanced dual-camera system.",
+    "specification": [
+      "5.4-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "Dual 12MP camera system",
+      "Cinematic mode",
+      "iOS 15"
+    ],
+    "availability": false,
+    "rating": 4.6
+  }
+
+]
