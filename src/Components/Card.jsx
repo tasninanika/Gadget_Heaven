@@ -17,13 +17,13 @@ const Card = ({ gadget }) => {
 
       {/* Content Section */}
       <div className="mt-4 items-start text-left">
-        <h2 className="text-lg font-semibold">{product_title}</h2>
+        <h2 className="text-lg font-bold">{product_title}</h2>
         <p className="text-gray-600 text-lg">Price: {price}</p>
 
         {/* Button Section */}
         <div className="mt-4">
           <Link to={`/gadget/${product_id}`}>
-            <button className="px-4 py-2 border-2 border-purple-600 text-purple-600 font-semibold rounded-lg hover:bg-purple-600 hover:text-white transition">
+            <button className="px-4 py-2 border-2 border-purple-600 text-purple-600 font-semibold rounded-full hover:bg-purple-600 hover:text-white transition">
               View Details
             </button>
           </Link>
