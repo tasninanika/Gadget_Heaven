@@ -61,9 +61,10 @@ const Statistics = () => {
             <Area
               type="monotone"
               dataKey="price"
-              stroke="#7c3aed"
+              stroke="none"
               strokeWidth={2}
               fill="url(#bgCurve)"
+              tooltipType="none"
             />
 
             {/* Bars on top */}
