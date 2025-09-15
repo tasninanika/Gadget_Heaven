@@ -7,7 +7,7 @@ const Categories = ({ categories }) => {
       <div className="w-60 p-4 bg-white rounded-lg shadow-lg ">
         <ul className="space-y-2">
           <li>
-            <button className="w-full px-4 py-2 bg-purple-600 text-white rounded-lg font-semibold">
+            <button className="w-full px-4 py-2 bg-purple-600 text-white rounded-full font-semibold text-start">
               All Product
             </button>
           </li>
