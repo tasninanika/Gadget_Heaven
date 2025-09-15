@@ -48,12 +48,12 @@ const Statistics = () => {
               dataKey="product_title"
               axisLine={false}
               tickLine={false}
-              tick={{ fill: "#1f2937", fontSize: 12 }}
+              tick={{ fill: "#1f2937", fontSize: 12, fontWeight: "bold" }}
             />
             <YAxis
               axisLine={false}
               tickLine={false}
-              tick={{ fill: "#1f2937", fontSize: 12 }}
+              tick={{ fill: "#1f2937", fontSize: 12, fontWeight: "bold" }}
             />
             <Tooltip />
             <Legend />
