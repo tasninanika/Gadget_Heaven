@@ -9,7 +9,7 @@ const Footer = () => {
           Leading the way in cutting-edge technology and innovation.
         </p>
       </div>
-      <footer className="flex justify-between items-center mx-auto footer sm:footer-horizontal pb-12 text-black py-4 border border-gray-400 mt-8 px-96">
+      <footer className="flex justify-between items-center mx-auto footer sm:footer-horizontal pb-12 text-black py-4 border-t border-gray-200 mt-8 px-96">
         <nav>
           <h2 className=" text-black font-bold text-xl">Services</h2>
           <a className="link link-hover">Product Support</a>
