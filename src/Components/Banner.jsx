@@ -57,7 +57,7 @@ const Banner = () => {
         <img
           className="w-[1500px] h-[420px]  rounded-4xl border-18 bg-white/10 backdrop-blur-lg  border-white/10 "
           src={bannerImg}
-          alt=""
+          alt="banner"
         />
       </div>
     </div>
