@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import {
   ComposedChart,
-  BarChart,
   Area,
   Bar,
   XAxis,
@@ -42,42 +41,35 @@ const Statistics = () => {
             data={gadgets}
             margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
           >
+            {/* horizontal grid */}
             <CartesianGrid stroke="#e5e7eb" vertical={false} />
 
-            <XAxis dataKey="product_title" tick={{ fontSize: 10 }} />
+            <XAxis dataKey="product_title" tick={{ fontSize: 12 }} />
             <YAxis />
             <Tooltip />
             <Legend />
 
+            {/* Gradient for Area */}
             <defs>
               <linearGradient id="bgCurve" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3} />
-                <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
+                <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.6} />
+                <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0.2} />
               </linearGradient>
             </defs>
 
+            {/* Background smooth curve */}
             <Area
               type="monotone"
               dataKey="price"
-              stroke="#8b5cf6"
+              stroke="#7c3aed"
               strokeWidth={2}
               fill="url(#bgCurve)"
             />
 
-            <Bar
-              dataKey="price"
-              barSize={40}
-              fill="#8b5cf6"
-              radius={[6, 6, 0, 0]}
-            />
+            {/* Bars on top */}
+            <Bar dataKey="price" barSize={40} fill="#8b5cf6" />
           </ComposedChart>
         </ResponsiveContainer>
-
-        <div className="text-center mt-4">
-          <p className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-            Purple Bar = Gadget Price
-          </p>
-        </div>
       </div>
     </div>
   );
