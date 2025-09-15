@@ -15,7 +15,7 @@ const Home = () => {
         </Helmet>
         <Banner />
       </div>
-      <Heading title={"Explore Cutting-Edge Gadgets"}></Heading>
+      <Heading></Heading>
       <Categories categories={categories}></Categories>
     </>
   );
