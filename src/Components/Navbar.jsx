@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar text-purple-700 mx-auto px-24">
+    <div className="navbar mx-auto px-24">
       <div className="navbar-start">
         <Link to="/" className="text-xl font-bold">
           Gadget Heaven
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-6">
+        <ul className="menu menu-horizontal px-1 gap-6 font-medium opacity-60">
           <Link to="/" className="hover:underline">
             Home
           </Link>
@@ -25,10 +25,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-circle btn-outline border-black bg-white">
+        <button className="btn btn-circle btn-outline border-purple-300 bg-white">
           <i className="fa-solid fa-cart-shopping text-purple-500 text-xl"></i>
         </button>
-        <button className="btn btn-circle btn-outline border-black bg-white ml-3">
+        <button className="btn btn-circle btn-outline border-purple-300 bg-white ml-3">
           <i className="fa-solid fa-heart text-purple-500 text-xl"></i>
         </button>
       </div>
