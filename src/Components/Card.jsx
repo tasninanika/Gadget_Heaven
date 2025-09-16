@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Card = ({ gadget }) => {
-  const { product_id, price, product_image, product_title } = gadget || {}; // Include product_id
+  const { product_id, price, product_image, product_title } = gadget || {};
 
   return (
-    <div className="w-full bg-white rounded-lg shadow-lg p-6">
+    <div className="w-full bg-white rounded-xl shadow-lg p-6">
       {/* Image Section */}
       <div className="w-full h-40 bg-gray-200 rounded-lg flex justify-center items-center">
         <img
