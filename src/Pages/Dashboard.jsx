@@ -202,15 +202,29 @@ const Dashboard = () => {
 
       {/* Purchase Success Modal */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center  bg-black/50 ">
-          <div className="bg-white p-6 rounded-lg text-center shadow-lg">
-            <img src={Success} alt="Success" className="w-12 mx-auto mb-3" />
-            <h2 className="text-lg font-bold">Payment Successfully</h2>
-            <p>Thanks for purchasing.</p>
-            <p className="font-bold">Total: {finalTotalPrice}</p>
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50">
+          <div className="bg-white w-96 p-8 rounded-xl text-center shadow-2xl">
+            {/* Success Icon */}
+            <img src={Success} alt="Success" className="w-16 mx-auto mb-4" />
+
+            {/* Title */}
+            <h2 className="text-2xl font-bold text-black mb-3">
+              Payment Successful
+            </h2>
+
+            {/* Divider */}
+            <div className="border-b border-gray-200 mb-4"></div>
+
+            {/* Messages */}
+            <p className="text-gray-600 mb-2">Thanks for purchasing.</p>
+            <p className="font-semibold text-gray-700">
+              Total: {finalTotalPrice}
+            </p>
+
+            {/* Close Button */}
             <button
               onClick={handleClose}
-              className="mt-4 px-6 py-2 bg-gray-200 rounded-lg"
+              className="mt-6 w-full py-3 bg-gray-200 text-black font-semibold rounded-full hover:bg-purple-400 hover:text-white transition"
             >
               Close
             </button>
