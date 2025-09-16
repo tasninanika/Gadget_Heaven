@@ -96,7 +96,7 @@ const ProductDetails = () => {
               starDimension="20px"
               starSpacing="4px"
             />
-            <span className="ml-2 text-gray-500 text-sm font-semibold bg-gray-50 p-2 rounded-full">
+            <span className="ml-2 text-gray-500 text-sm font-semibold p-2 rounded-full">
               {gadget.rating || "0.0"}
             </span>
           </div>
