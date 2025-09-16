@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { getAllToCart, getAllWishlist } from "../utils";
 import Success from "../../src/assets/Group.png";
 import { Helmet } from "react-helmet-async";
+import { FaSortAmountDown } from "react-icons/fa";
 
 const Dashboard = () => {
   const [gadgets, setGadgets] = useState([]); // Holds all cart items
@@ -108,31 +109,45 @@ const Dashboard = () => {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-5xl mx-auto mt-6 p-6 bg-white rounded-lg shadow-lg">
+      <div className="max-w-5xl mx-auto mt-6 p-6">
         {/* Title & Actions */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-xl font-semibold">
-            {isCart ? "Cart" : "Wishlist"}
-          </h2>
+          <h2 className="text-xl font-bold">{isCart ? "Cart" : "Wishlist"}</h2>
 
           {/* Actions */}
           <div className="flex gap-4 items-center">
             {isCart && (
               <>
-                <span className="font-bold">Total Cost: ${totalPrice}</span>
+                <span className="text-xl font-bold">
+                  Total Cost: ${totalPrice}
+                </span>
+
+                {/* Sort by Price Button */}
                 <button
                   onClick={sortCartByPrice}
-                  className="px-4 py-2 border text-purple-400 rounded-full hover:bg-gray-200"
+                  className="relative px-4 py-2 rounded-full overflow-hidden group"
                 >
-                  Sort by Price
+                  {/* Gradient Border */}
+                  <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-purple-400 to-purple-600">
+                    <span className="h-full w-full rounded-full bg-white block"></span>
+                  </span>
+
+                  {/* Text + Icon */}
+                  <span className="relative flex items-center gap-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
+                    {" "}
+                    Sort by Price
+                    <FaSortAmountDown className="text-purple-400" />
+                  </span>
                 </button>
+
+                {/* Purchase Button */}
                 <button
                   onClick={handlePurchase}
                   disabled={gadgets.length === 0}
-                  className={`px-4 py-2 rounded-lg ${
+                  className={`px-4 py-2 rounded-full text-white font-semibold ${
                     gadgets.length === 0
                       ? "bg-gray-300 cursor-not-allowed"
-                      : "bg-purple-600 text-white hover:bg-purple-700"
+                      : "bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800"
                   }`}
                 >
                   Purchase
