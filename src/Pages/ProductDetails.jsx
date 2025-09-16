@@ -46,11 +46,11 @@ const ProductDetails = () => {
       {/* Product Card */}
       <div className=" -mt-6 max-w-6xl max-h-12xl mx-auto bg-white rounded-2xl shadow-lg p-6 flex gap-6 border border-gray-200">
         {/* Left: Image Section */}
-        <div className="w-1/3  rounded-lg flex items-center justify-center">
+        <div className="w-1/3  rounded-xl flex items-center justify-center">
           <img
             src={gadget.product_image || "placeholder.jpg"}
             alt={gadget.product_title}
-            className=" object-cover rounded-lg"
+            className="object-cover rounded-xl"
           />
         </div>
 
