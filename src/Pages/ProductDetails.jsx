@@ -59,7 +59,7 @@ const ProductDetails = () => {
           <h2 className="text-2xl font-bold text-black">
             {gadget.product_title || "Product Name"}
           </h2>
-          <p className="text-lg font-bold text-gray-600 mt-2">
+          <p className="text-base font-bold text-gray-700 mt-2">
             Price: ${gadget.price || "N/A"}
           </p>
           {/* Stock Status */}
