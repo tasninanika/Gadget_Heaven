@@ -44,7 +44,7 @@ const ProductDetails = () => {
       </div>
 
       {/* Product Card */}
-      <div className=" -mt-6 max-w-6xl max-h-12xl mx-auto bg-white rounded-lg shadow-lg p-6 flex gap-6 border border-gray-200">
+      <div className=" -mt-6 max-w-6xl max-h-12xl mx-auto bg-white rounded-2xl shadow-lg p-6 flex gap-6 border border-gray-200">
         {/* Left: Image Section */}
         <div className="w-1/3  rounded-lg flex items-center justify-center">
           <img
@@ -56,25 +56,24 @@ const ProductDetails = () => {
 
         {/* Right: Product Details */}
         <div className="w-2/3 flex flex-col">
-          <h2 className="text-2xl font-semibold text-black">
+          <h2 className="text-2xl font-bold text-black">
             {gadget.product_title || "Product Name"}
           </h2>
-          <p className="text-xl font-semibold text-gray-700 mt-1">
-            Price:{" "}
-            <span className="text-purple-600">${gadget.price || "N/A"}</span>
+          <p className="text-lg font-bold text-gray-600 mt-2">
+            Price: ${gadget.price || "N/A"}
           </p>
           {/* Stock Status */}
-          <span className="w-[110px] mt-2 text-center bg-green-50 border border-green-500 text-green-400 px-3 py-1  rounded-full text-sm font-medium">
+          <span className="w-[110px] mt-3 text-center bg-green-50 border border-green-500 text-green-400 px-3 py-1  rounded-full text-sm font-medium">
             {gadget.inStock ? "In Stock" : "Out of Stock"}
           </span>
           {/* Description */}
-          <p className="text-gray-600 mt-3">
+          <p className="text-gray-500 font-medium mt-4">
             {gadget.description || "No description available."}
           </p>
           {/* Specification */}
           <div className="mt-3">
-            <h3 className="font-semibold text-black">Specification:</h3>
-            <ul className="list-decimal list-inside text-gray-700 mt-1">
+            <h3 className="font-bold text-black">Specification:</h3>
+            <ul className="list-decimal list-inside text-gray-500 mt-1">
               {gadget.specification ? (
                 gadget.specification.map((spec, index) => (
                   <li key={index}>{spec}</li>
