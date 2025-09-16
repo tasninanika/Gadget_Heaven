@@ -164,7 +164,7 @@ const Dashboard = () => {
             {(isCart ? gadgets : wishlistItems).map((item) => (
               <div
                 key={item.product_id}
-                className="bg-white p-6 rounded-2xl shadow-md flex items-center gap-6"
+                className="bg-white p-6 rounded-2xl flex items-center gap-6"
               >
                 <img
                   src={item.product_image}
