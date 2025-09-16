@@ -128,7 +128,7 @@ const Dashboard = () => {
                   className="relative px-4 py-2 rounded-full overflow-hidden group"
                 >
                   {/* Gradient Border */}
-                  <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-b from-purple-700 to-purple-500">
+                  <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-b from-purple-700 to-purple-400">
                     <span className="h-full w-full rounded-full bg-white block"></span>
                   </span>
 
@@ -147,7 +147,7 @@ const Dashboard = () => {
                   className={`px-4 py-2 rounded-full text-white font-semibold ${
                     gadgets.length === 0
                       ? "bg-gray-300 cursor-not-allowed"
-                      : "bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800"
+                      : "bg-gradient-to-b from-purple-700 to-purple-400 hover:from-purple-600 hover:to-purple-800"
                   }`}
                 >
                   Purchase
