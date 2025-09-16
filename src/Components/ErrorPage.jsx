@@ -1,18 +1,18 @@
 import { Helmet } from "react-helmet-async";
-import page404 from "../../src/assets/404_page-not-found.png"
+import Lottie from "lottie-react";
+import errorAnimation from "../assets/error.json";
+
 const ErrorPage = () => {
-    return (
-      <div>
-        <Helmet>
-          <title>ErrorPage || Gadget Heaven</title>
-        </Helmet>
-        <img
-          src={page404}
-          alt="page not found"
-          className="w-[1500px] mx-auto"
-        />
+  return (
+    <div className="flex items-center justify-center h-screen bg-gray-50">
+      <Helmet>
+        <title>404 || Gadget Heaven</title>
+      </Helmet>
+      <div className="w-80 md:w-[800px]">
+        <Lottie animationData={errorAnimation} loop={true} />
       </div>
-    );
+    </div>
+  );
 };
 
 export default ErrorPage;
