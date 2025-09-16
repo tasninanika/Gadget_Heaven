@@ -128,12 +128,12 @@ const Dashboard = () => {
                   className="relative px-4 py-2 rounded-full overflow-hidden group"
                 >
                   {/* Gradient Border */}
-                  <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-purple-400 to-purple-600">
+                  <span className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-b from-purple-700 to-purple-500">
                     <span className="h-full w-full rounded-full bg-white block"></span>
                   </span>
 
                   {/* Text + Icon */}
-                  <span className="relative flex items-center gap-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
+                  <span className="relative flex items-center gap-2 font-semibold bg-clip-text text-purple-600">
                     {" "}
                     Sort by Price
                     <FaSortAmountDown className="text-purple-400" />
