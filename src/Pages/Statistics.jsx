@@ -32,10 +32,10 @@ const Statistics = () => {
       </div>
 
       {/* Chart Section */}
-      <div className="bg-white p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold mb-6 text-center">
-          Gadgets Price Distribution
-        </h2>
+      <h2 className="text-2xl font-bold mb-6 text-center">
+        Gadgets Price Distribution
+      </h2>
+      <div className="bg-purple-50 p-6 m-20 rounded-xl">
         <ResponsiveContainer width="100%" height={400}>
           <ComposedChart
             data={gadgets}
