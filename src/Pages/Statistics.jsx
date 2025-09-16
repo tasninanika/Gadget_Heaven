@@ -24,7 +24,7 @@ const Statistics = () => {
       {/* Header Section */}
       <div className="bg-purple-600 text-white text-center py-6 shadow-md mb-10">
         <h1 className="text-3xl font-bold">Statistics</h1>
-        <p className="mt-2">
+        <p className="mt-3">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to <br /> the coolest accessories, we have
           it all!
