@@ -23,7 +23,7 @@ const Card = ({ gadget }) => {
         {/* Button Section */}
         <div className="mt-4">
           <Link to={`/gadget/${product_id}`}>
-            <button className="px-4 py-2 border-2 border-purple-600 text-purple-600 font-semibold rounded-full hover:bg-purple-600 hover:text-white transition">
+            <button className="px-4 py-2 border-2 border-purple-600 text-purple-600 font-semibold rounded-full hover:bg-purple-400 hover:text-white hover:border-none transition btn-sm">
               View Details
             </button>
           </Link>

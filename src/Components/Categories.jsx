@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Categories = ({ categories }) => {
   return (
-    <div className=" px-8 md:px-12  mt-12 flex gap-8 mx-auto max-w-[1500px]">
+    <div className="px-8 md:px-12  mt-12 flex gap-8 mx-auto max-w-[1500px]">
       {/* Left side: Categories list */}
       <div className="w-60 p-4 bg-white rounded-lg shadow-lg ">
         <ul className="space-y-2">
@@ -26,7 +26,7 @@ const Categories = ({ categories }) => {
       </div>
 
       {/* Right side: Outlet (content will change) */}
-      <div className="mx-auto rounded-lg ">
+      <div className="mx-auto rounded-lg">
         <Outlet />
       </div>
     </div>
