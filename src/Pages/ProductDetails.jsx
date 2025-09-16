@@ -73,7 +73,7 @@ const ProductDetails = () => {
           {/* Specification */}
           <div className="mt-3">
             <h3 className="font-bold text-black">Specification:</h3>
-            <ul className="list-decimal list-inside text-gray-500 mt-1">
+            <ul className="list-decimal list-inside text-gray-500 mt-3">
               {gadget.specification ? (
                 gadget.specification.map((spec, index) => (
                   <li key={index}>{spec}</li>
@@ -85,7 +85,7 @@ const ProductDetails = () => {
           </div>
           {/* Rating Section */}
           <div className="flex items-center mt-3">
-            <span className="font-semibold text-black">Rating⭐</span>
+            <span className="font-semibold text-black mb-3">Rating⭐</span>
           </div>
           <div className=" flex items-center">
             <StarRatings
@@ -93,10 +93,10 @@ const ProductDetails = () => {
               starRatedColor="gold"
               numberOfStars={5}
               name="rating"
-              starDimension="24px"
-              starSpacing="2px"
+              starDimension="20px"
+              starSpacing="4px"
             />
-            <span className="ml-2 text-gray-500 text-sm">
+            <span className="ml-2 text-gray-500 text-sm font-semibold bg-gray-50 p-2 rounded-full">
               {gadget.rating || "0.0"}
             </span>
           </div>
@@ -105,7 +105,7 @@ const ProductDetails = () => {
           <div className="flex items-center mt-4 gap-3">
             <button
               onClick={() => handleAddToCart(gadget)}
-              className="bg-purple-600 text-white flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-purple-700 transition"
+              className="bg-purple-600 text-white flex items-center gap-2 px-4 py-2 rounded-full hover:bg-purple-700 transition btn-sm"
             >
               Add To Cart <i className="fa-solid fa-cart-shopping bg-gray"></i>
             </button>
@@ -114,15 +114,15 @@ const ProductDetails = () => {
               disabled={wishlistItems.some(
                 (item) => item.product_id === gadget.product_id
               )}
-              className={`p-2 border border-gray-400 rounded-full px-4 ${
+              className={`py-2 px-3 border border-gray-200 rounded-full btn-sm ${
                 wishlistItems.some(
                   (item) => item.product_id === gadget.product_id
                 )
-                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                  : "hover:bg-gray-100"
+                  ? "text-gray-500 cursor-not-allowed"
+                  : "hover:bg-gray-50"
               }`}
             >
-              <i className="fa-regular text-black fa-heart text-xl"></i>
+              <i className="fa-regular text-purple-700 fa-heart text-sm"></i>
             </button>
           </div>
         </div>
