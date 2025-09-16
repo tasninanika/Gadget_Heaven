@@ -63,7 +63,7 @@ const ProductDetails = () => {
             Price: ${gadget.price || "N/A"}
           </p>
           {/* Stock Status */}
-          <span className="w-[110px] mt-3 text-center bg-green-50 border border-green-500 text-green-400 px-3 py-1  rounded-full text-sm font-medium">
+          <span className="w-[110px] mt-3 text-center bg-green-50 border border-green-500 text-green-500 px-3 py-1  rounded-full text-sm font-medium">
             {gadget.inStock ? "In Stock" : "Out of Stock"}
           </span>
           {/* Description */}
@@ -84,8 +84,8 @@ const ProductDetails = () => {
             </ul>
           </div>
           {/* Rating Section */}
-          <div className="flex items-center mt-3">
-            <span className="font-semibold text-black mb-3">Rating⭐</span>
+          <div className="flex items-center mt-4">
+            <span className="font-bold text-black">Rating⭐</span>
           </div>
           <div className=" flex items-center">
             <StarRatings
@@ -100,7 +100,6 @@ const ProductDetails = () => {
               {gadget.rating || "0.0"}
             </span>
           </div>
-
           {/* Buttons Section */}
           <div className="flex items-center mt-4 gap-3">
             <button
