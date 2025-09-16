@@ -49,6 +49,10 @@ const routes = createBrowserRouter([
         path: "/support",
         element: <Support></Support>,
       },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ],
   },
 ]);
