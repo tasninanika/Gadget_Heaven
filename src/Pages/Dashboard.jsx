@@ -4,6 +4,7 @@ import { getAllToCart, getAllWishlist } from "../utils";
 import Success from "../../src/assets/Group.png";
 import { Helmet } from "react-helmet-async";
 import { FaSortAmountDown } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 const Dashboard = () => {
   const [gadgets, setGadgets] = useState([]); // Holds all cart items
@@ -163,16 +164,19 @@ const Dashboard = () => {
             {(isCart ? gadgets : wishlistItems).map((item) => (
               <div
                 key={item.product_id}
-                className="bg-white p-6 rounded-lg shadow-md flex items-center gap-6"
+                className="bg-white p-6 rounded-2xl shadow-md flex items-center gap-6"
               >
                 <img
                   src={item.product_image}
                   alt={item.product_title}
-                  className="w-24 h-24 object-cover rounded-md"
+                  className="w-24 h-24 object-cover rounded-2xl"
                 />
                 <div className="flex-1">
-                  <h3 className="font-bold text-lg">{item.product_title}</h3>
-                  <p className="text-lg font-bold text-purple-600 mt-2">
+                  <h3 className="font-bold text-xl mb-2">
+                    {item.product_title}
+                  </h3>
+                  <p className="text-sm opacity-80">{item.description}</p>
+                  <p className="font-semibold mt-2 opacity-85">
                     Price: ${item.price}
                   </p>
                 </div>
@@ -182,9 +186,9 @@ const Dashboard = () => {
                       ? handleDelete(item.product_id)
                       : handleDeleteWishlist(item.product_id)
                   }
-                  className="text-red-500 text-xl hover:bg-red-100 p-2 rounded-full"
+                  className="text-red-600 text-lg hover:bg-red-100 p-2 rounded-full border border-red-400"
                 >
-                  ✖
+                  <IoClose />
                 </button>
               </div>
             ))}
